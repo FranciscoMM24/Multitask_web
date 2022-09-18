@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --negro: #0b0b0b;
+    --gris: #333;
+    --blanco-opaco: #9e9e9e;
+    --blanco: #fefefe;
+}
+
+body {
+    /* background-image: linear-gradient(to right top, #4e56da, #6f4ccf, #8640c3, #9933b6, #a723a7); */
+    /* background-image: linear-gradient(to right top, #0b0b0b, #15151d, #1b1c2e, #1e2440, #1e2c53, #1f3764, #1d4375, #154f87, #11619a, #0c74ad, #0587bf, #039bd1); */
+    background-image: linear-gradient(to right top, #0b0b0b, #1d1831, #2f2056, #48257b, #69249f, #771fad, #8717bb, #9701c8, #9101c6, #8a02c3, #8402c1, #7d03be);
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__pc {
+    display: none;
+}
+
+.inactive {
+    display: none;
+}
+
+
+.main__header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./visual/img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main__header-button {
+    color: var(--blanco);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__header-button a {
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: .3rem solid var(--blanco);
+}
+
+
+.header-nav {
+    width: 100%;
+}
+
+.header-nav .main-nav--icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: var(--blanco);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .5rem;
+}
+
+.icon__menu {
+    width: 1.5rem;
+    height: 4vh;
+    display: inline-block;
+    background-image: url('./visual/icon/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.container-menu__menu {
+    width: 300px;
+    height: 80%;
+    position: fixed;
+    top: 7vh;
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    border-radius: 10%;
+}
+
+.container-menu__menu li {
+    color: var(--blanco);
+    list-style: none;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-menu__menu li a {
+    color: var(--blanco);
+    padding: 0 5px;
+    border-bottom: 1px solid var(--gris);
+    border-radius: 10%;
+
+}
+
+.cerrar__menu span {
+    position: relative;
+    left: 110px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url('./visual/icon/cerrar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--blanco);
+}
+
+
+.main-tareas {
+    height: auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tareas__img {
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: minmax(300px, 700px);
+    grid-auto-rows: 250px;
+    gap: 10px;
+}
+
+.main-tareas__img div {
+    width: 100%;
+    height: 100%;
+}
+
+.programacion {
+    background-image: url('./visual/img/programacion-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+.redes {
+    background-image: url('./visual/img/redes-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.literatura {
+    background-image: url('./visual/img/literatura-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.matematicas {
+    background-image: url('./visual/img/mate-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.programacion:hover {
+    filter: saturate(180%);
+    transform: scale(1.02);
+}
+
+.redes:hover {
+    filter: saturate(180%);
+    transform: scale(1.02);
+}
+
+.matematicas:hover {
+    filter: saturate(180%);
+    transform: scale(1.02);
+}
+
+
+.literatura:hover {
+    filter: saturate(180%);
+    transform: scale(1.02);
+}
+
+.tareas-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tareas-link button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--negro);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    color: var(--blanco);
+}
+
+.tareas-link button:hover {
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    color: var(--blanco);
+}
+
+
+
+
+
+
+
+
+
+
+.form-programacion {
+    width: 97%;
+    height: 99vh;
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    position: fixed;
+    top: 1vh;
+    left: calc(50% - 48%);
+    border: 1px solid var(--gris);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cerrar-form__programacion,
+.cerrar-form__redes {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    background-image: url('./visual/icon/cerrar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 10px;
+    left: calc(100% - 40px);
+}
+
+
+.form-programacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-programacion h3,
+.form-redes h3 {
+    margin-top: 3rem;
+    color: var(--blanco);
+}
+
+
+
+
+.logo__form {
+    width: 50px;
+    height: 50px;
+    background-image: url('../visual/icon/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.form-programacion .lenguaje {
+    margin: 2rem 0 1rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    border: none;
+}
+
+.form-programacion .lenguaje select {
+    padding: 2px 4px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+}
+
+.form-programacion .lenguaje select option {
+    color: var(--blanco);
+    background-color: var(--gris);
+}
+
+
+.dTrabajo {
+    margin: 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+}
+
+#dTrabajo {
+    padding: 10px 1rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.ldia {
+    margin: 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+}
+
+#ldia {
+    padding: 10px 1rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.documentacion {
+    margin: 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+}
+
+.btnEnviarTarea {
+    cursor: pointer;
+    padding: 4px 1rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+    border-radius: 10px;
+}
+
+
+
+
+
+.form-redes {
+    width: 97%;
+    height: 99vh;
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    position: fixed;
+    top: 1vh;
+    left: calc(50% - 48%);
+    border: 1px solid var(--gris);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-redes .servicio  {
+    margin: 2rem 0 1rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    border: none;
+}
+
+.form-redes .servicio  select {
+    padding: 2px 4px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right top, #0065fd, #5959f8, #814af1, #a034e6, #ba00d8);
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+}
+
+.form-redes .servicio select option {
+    color: var(--blanco);
+    background-color: var(--gris);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 5rem;
+    width: 100%;
+    height: 25vh;
+    background-color: #56258a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-li__h2 li {
+    list-style: none;
+    color: var(--blanco);
+}
+
+.footer-li__h2 li h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-li__h2 li a {
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--blanco);
+    margin: 5px 0;
+}
+
+
+.inactive {
+    display: none;
+}

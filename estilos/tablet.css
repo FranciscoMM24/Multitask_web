@@ -1,0 +1,27 @@
+.main-tareas__img {
+    grid-template-columns: minmax(300px,400px) minmax(300px,800px);
+    grid-template-rows: repeat(3, 350px);
+    justify-content: center;
+    gap: 10px;
+}
+
+.programacion {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+}
+
+.redes{
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+}
+
+.literatura{
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+
+.matematicas{
+    grid-column: 1 / 3;
+    grid-row: 3/4;
+}

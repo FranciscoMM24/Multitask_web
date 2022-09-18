@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./estilos/tablet.css" media="(min-width: 700px)">
+    <link rel="stylesheet" href="./estilos/pc.css" media="(min-width: 1000px)">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>MultiTask</title>
+</head>
+<!-- login,form,whatsapp -->
+
+<body>
+
+    <header>
+
+        <nav class="header-nav">
+
+            <ul class="main-nav--icon">
+                <li>MultiTask</li>
+                <li class="botonMenu"><span class="icon__menu"></span></li>
+            </ul>
+
+            <ul class="menu__pc">
+                <li><a href="./info.html">Sobre nosotros</a></li>
+                <li><a href="./iniciaSecion.html">Iniciar sesión</a></li>
+                <li><a href="./registrarte.html">Registrarte</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="container-menu">
+
+            <ul class="container-menu__menu inactive">
+                <li class="cerrar__menu"><span id="botonCerrar__menu"></span></li>
+                <li><a href="./info.html">Sobre nosotros</a></li>
+                <li><a href="./iniciaSecion.html">Iniciar sesión</a></li>
+                <li><a href="./registrarte.html">Registrarte</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+        <h2>¿ En que podemos ayudarte ?</h2>
+        <section class="main-tareas">
+            <div class="main-tareas__img">
+                <div class="programacion tareas-link ">
+
+                    <button id="Programacion">Programación</button>
+
+                </div>
+                <div class="redes tareas-link">
+
+                    <button id="btnRedes">Redes</button>
+                    <!-- <img src="./visual/img/redes-img.jpg" alt=""> -->
+
+                </div>
+                <div class="literatura tareas-link">
+
+                    <button>Literatura</button>
+                    <!-- <img src="./visual/img/literatura-img.jpg" alt=""> -->
+
+                </div>
+                <div class="matematicas tareas-link">
+
+                    <button>Matematicas</button>
+                    <!-- <img src="./visual/img/mate-img.jpg" alt=""> -->
+
+                <dive>
+            </div>
+
+        </section>
+
+        <section class="form-programacion inactive">
+            <span class="cerrar-form__programacion"></span>
+            <span class="logo__form"></span>
+            <h3>Trabajo de programación</h3>
+            <label for="lenguaje" class="lenguaje">Selecciona el lenguaje:
+                <select name="" id="lenguaje">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript" selected>JavaScript</option>
+                    <option value="C#">C#</option>
+                    <option value="C++">C++</option>
+                </select>
+            </label>
+            <label for="dTrabajo" class="dTrabajo">Descripción del trabajo:
+            </label>
+            <input type="text" id="dTrabajo">
+            <label for="ldia" class="ldia">Limite de dias:
+            </label>
+            <input type="number" id="ldia">
+            <label class="documentacion">Documentación:
+                <input type="radio" value="Si" name="documentacion">
+                <input type="radio" value="No" name="documentacion" checked>
+            </label>
+            <button class="btnEnviarTarea">Enviar</button>
+
+        </section>
+
+
+        <section class="form-redes inactive">
+            <span class="cerrar-form__redes"></span>
+            <span class="logo__form"></span>
+            <h3>Trabajo de programación</h3>
+            <label for="lenguaje" class="servicio">Servicio:
+                <select name="" id="redes">
+                    <option value="Soporte">Soporte</option>
+                    <option value="Configuración">Configuración</option>
+                    <option value="Mantenimiento" selected>Mantenimiento</option>
+                </select>
+            </label>
+            <label for="dTrabajo" class="dTrabajo">Descripción del trabajo:
+            </label>
+            <input type="text" id="dTrabajo">
+            <label for="ldia" class="ldia">Limite de dias:
+            </label>
+            <input type="number" id="ldia">
+            <button class="btnEnviarTarea">Enviar</button>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <ul class="footer-li__h2">
+            <li>
+                <h2>Redes sociales</h2>
+            </li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+
+        <ul class="footer-li__h2">
+            <li>
+                <h2>Ayuda</h2>
+            </li>
+            <li><a href="">Soporte</a></li>
+            <li><a href="">Contáctanos</a></li>
+        </ul>
+
+    </footer>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
