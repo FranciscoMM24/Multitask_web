@@ -7,38 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/registrarte.css">
     <link rel="stylesheet" href="./estilos/pc.css" media="(min-width: 1000px)">
-
     <title>MultiTask registrarte</title>
 </head>
 
 <body>
-
     <div class="main-iniciar">
         <div class="container-fondo">
-
-
         </div>
-
-
         <div class="container">
             <section class="iniciar-secion-container">
-
                 <span class="logo__mt"></span>
-                <h3>Registrate</h3>
-                <label for="correo" class="correo">Ingresa el correo:</label>
-                <input type="text" id="correo">
-                <label for="nombre" class="nombre">Ingresa el nombre de usuario:</label>
-                <input type="text" id="nombre">
-                <label for="contrase" class="contrase">Ingresa la contraseña:</label>
-                <input type="password" id="contrase">
-                <button class="botonIniciar">Registrate</button>
-                <button class="botonRegistrate">Iniciar sesión</button>
-
+                <form action="conexion_bd/registro_cliente.php" method="POST" class="formulario_registro">
+                    <h3>Registrate</h3>
+                    <label for="correo" class="correo">Ingresa el correo:</label>
+                    <input type="text" id="correo" name="correo_electronico">
+                    <label for="nombre" class="nombre">Ingresa el nombre de usuario:</label>
+                    <input type="text" id="nombre" name="nombre_cliente"">
+                <label for=" contrase" class="contrase">Ingresa la contraseña:</label>
+                    <input type="password" id="contrase" name="contra_cliente">
+                    <button class="botonIniciar">Registrate</button>
+                </form>
 
             </section>
         </div>
     </div>
-
 </body>
 
 </html>

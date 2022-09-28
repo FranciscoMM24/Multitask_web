@@ -24,14 +24,15 @@
             <section class="iniciar-secion-container">
 
                 <span class="logo__mt"></span>
+                <form action="conexion_bd/login_cliente.php" method="POST" class="login_clientes">
                 <h3>Iniciar sesión</h3>
                 <label for="nombre" class="nombre">Ingresa el nombre de usuario:</label>
-                <input type="text" id="nombre">
+                <input type="text" id="nombre" name="name_cliente">
                 <label for="contrase" class="contrase">Ingresa la contraseña:</label>
-                <input type="password" id="contrase">
+                <input type="password" id="contrase" name="contrase_cliente">
                 <button class="botonIniciar">Iniciar sesión</button>
                 <button class="botonRegistrate">Registrate</button>
-
+            </form>
 
             </section>
         </div>
